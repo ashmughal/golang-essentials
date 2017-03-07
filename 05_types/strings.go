@@ -25,12 +25,12 @@ func main() {
 }
 
 func runeOperations() {
-	a := "你好世界"  // hello world in Chinese
-	b := '好'
-
 	fmt.Println()
 	fmt.Println("runeOperations")
 	fmt.Println("================")
+
+	a := "你好世界"  // hello world in Chinese
+	b := '好'
 
 	fmt.Printf("%T, %v, %v", b, b, string(b))
 
@@ -40,12 +40,12 @@ func runeOperations() {
 }
 
 func byteOperations() {
-	a := "你好世界"  // hello world in Chinese
-	b := []byte{228, 189, 160, 229, 165, 189, 228, 184, 150, 231, 149, 140}
-
 	fmt.Println()
 	fmt.Println("byteOperations")
 	fmt.Println("================")
+
+	a := "你好世界"  // hello world in Chinese
+	b := []byte{228, 189, 160, 229, 165, 189, 228, 184, 150, 231, 149, 140}
 
 	fmt.Printf("%T, %v\n", a[0], a[0])
 	fmt.Printf("=%v\n", []byte(a))

@@ -21,6 +21,7 @@ func main() {
 
 	fmt.Printf("a && b: %v\n", a && b)
 	fmt.Printf("a || b: %v\n", a || b)
-	fmt.Printf("a || b || d: %v\n", a || b || d)
+	fmt.Printf("a || b || d: %v\n", a || b || d)  // short-circuit
+	fmt.Printf("a && d && c: %v\n", a && d && c)  // short-circuit
 }
 

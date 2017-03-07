@@ -19,7 +19,7 @@ func signedIntegers() {
 	var d int32 = math.MaxInt32   // int32 ranges from -2147483648 to 2147483647
 	var e int64 = math.MaxInt64   // int64 ranges from -9223372036854775808 to 9223372036854775807 (on a 64 bit processor)
 
-	fmt.Print("\n")
+	fmt.Println()
 	fmt.Println("signedIntegers")
 	fmt.Println("==============")
 
@@ -29,14 +29,14 @@ func signedIntegers() {
 	fmt.Printf("d: %v\n", d)
 	fmt.Printf("e: %v\n", e)
 
-	fmt.Print("\n")
+	fmt.Println()
 	fmt.Println("Widening conversions")
 	fmt.Println("====================")
 	fmt.Printf("int8 -> int16: %v, %v\n", a, int16(a))
 	fmt.Printf("int16 -> int32: %v, %v\n", b, int32(b))
 	fmt.Printf("int32 -> int64: %v, %v\n", d, int64(d))
 
-	fmt.Print("\n")
+	fmt.Println()
 	fmt.Println("Narrowing conversions")
 	fmt.Println("=====================")
 	fmt.Printf("int16 -> int8: %v, %v\n", b, int8(b))
@@ -61,14 +61,14 @@ func unsignedIntegers() {
 	fmt.Printf("d: %v\n", d)
 	fmt.Printf("e: %v\n", e)
 
-	fmt.Print("\n")
+	fmt.Println()
 	fmt.Println("Widening conversions")
 	fmt.Println("====================")
 	fmt.Printf("uint8 -> uint16: %v, %v\n", a, uint16(a))
 	fmt.Printf("uint16 -> uint32: %v, %v\n", b, uint32(b))
 	fmt.Printf("uint32 -> uint64: %v, %v\n", d, uint64(d))
 
-	fmt.Print("\n")
+	fmt.Println()
 	fmt.Println("Narrowing conversions")
 	fmt.Println("=====================")
 	fmt.Printf("uint16 -> uint8: %v, %v\n", b, uint8(b))
@@ -81,7 +81,7 @@ func integerOperators() {
 	b := 10
 	c := 9223372036854775807
 
-	fmt.Print("\n")
+	fmt.Println()
 	fmt.Println("integerOperators")
 	fmt.Println("================")
 
@@ -105,7 +105,7 @@ func integerOperators() {
 }
 
 func bitwiseOperators() {
-	fmt.Print("\n")
+	fmt.Println()
 	fmt.Println("bitwiseOperators")
 	fmt.Println("================")
 
@@ -135,7 +135,7 @@ func bitwiseOperators() {
 
 	// bit shift left
 	// 2      = 0010
-	// 2 << 2 =  1000 = 8
+	// 2 << 2 = 1000 = 8
 	fmt.Printf("%v << %v: %v\n", 2, 2, 2 << 2)
 
 	// bit shift right
